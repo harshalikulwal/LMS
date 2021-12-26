@@ -1,0 +1,15 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  day: 1
+  wday: MyString
+  month: 1
+  year: 1
+  reason: MyString
+
+two:
+  day: 1
+  wday: MyString
+  month: 1
+  year: 1
+  reason: MyString

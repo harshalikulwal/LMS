@@ -1,0 +1,28 @@
+<div class="form_container">
+  <%if @holidays.present? %>
+      <div class ="headline">
+      Holiday List
+    </div>
+    <div class="title_bar"  style="color: Fuchsia; font: bold;background-color: #fff">
+      <span style="padding-left: 10px; width:50px"> Slno.</span>
+      <span style="width:130px"> Day</span>
+      <span style="width:150px"> Month </span>
+      <span style="width:100px"> Year </span>
+      <span style="width:130px"> Week Day </span>
+      <span style="width:130px"> Reason</span>
+    </div>
+    <%  count = 0 %>
+    <%  @holidays.each do |h| %>
+      <div class="title_bar">
+        <span style="padding-left: 10px; width: 50px"> <%=  count = count + 1 %> </span>
+        <span style="width:130px"> <%=  h.day %></span>
+        <span style="width:150px"> <%=  h.month %> </span>
+        <span style="width:100px"> <%=  h.year %> </span>
+        <span style="width:120px"> <%=  h.wday %></span>
+        <span style="width:100px;color:red"> <%=h.reason%> </span>
+      </div>
+    <%end%>
+<% else %>
+  <div> Holiday list is not available </div>
+<%  end %>
+</div>
